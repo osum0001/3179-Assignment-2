@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Average Temperature by City (°C)",
+    "width": 400,
+    "height": 300,
+
+    "data": {
+        "url": "data/sample.json" 
+        
+    },
+
+    "mark": "bar",
+
+    "encoding": {
+
+        
+        "y": {
+            "field": "city",
+            "type": "nominal",
+            "title": "City"
+        },
+
+        
+        "x": {
+            "field": "temp",
+            "type": "quantitative",
+            "title": "Temperature (°C)"
+        },
+
+        "tooltip": [
+            { "field": "city", "type": "nominal" },
+            { "field": "temp", "type": "quantitative" }
+        ]
+    }
+
+}
