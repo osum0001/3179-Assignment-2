@@ -1,7 +1,0 @@
-[
-  { "city": "Melbourne", "temp": 20 },
-  { "city": "Sydney", "temp": 23 },
-  { "city": "Brisbane", "temp": 27 },
-  { "city": "Perth", "temp": 25 },
-  { "city": "Adelaide", "temp": 22 }
-]
