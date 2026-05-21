@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Australian Meteorological Data Visualisation</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Vega + Vega-Lite + Vega-Embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+     <!-- Reference to our master script-->
+    <script src="vegalitescript.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Australian Meteorological Data Visualisation</h1>
+        <p>A dashboard exploring weather patterns across Australia</p>
+    </header>
+
+    <main>
+
+        <section class="grid-top">
+
+            <div class="card">
+                <h2>Visualisation 1</h2>
+                <div id="bar_chart"></div>
+            </div>
+
+            <div class="card">
+                <h2>Visualisation 2</h2>
+                <div id="hozbar_chart"></div>
+            </div>
+
+        </section>
+
+
+        <section class="map-section">
+
+            <div class="card map-card">
+                <h2>Australian Rainfall by State</h2>
+                <div id="rainfall_map"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Built for Data Visualisation 2 Assignment</p>
+    </footer>
+
+    <!-- JavaScript (we’ll use later) -->
+    <script src="script.js"></script>
+
+</body>
+</html>

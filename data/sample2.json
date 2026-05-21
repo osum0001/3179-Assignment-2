@@ -1,0 +1,10 @@
+[
+  { "state": "Victoria", "wind_speed": 18 },
+  { "state": "New South Wales", "wind_speed": 22 },
+  { "state": "Queensland", "wind_speed": 15 },
+  { "state": "Western Australia", "wind_speed": 30 },
+  { "state": "South Australia", "wind_speed": 27 },
+  { "state": "Tasmania", "wind_speed": 35 },
+  { "state": "Northern Territory", "wind_speed": 12 },
+  { "state": "Australian Capital Territory", "wind_speed": 16 }
+]

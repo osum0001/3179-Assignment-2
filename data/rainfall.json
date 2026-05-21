@@ -1,0 +1,10 @@
+[
+  { "state": "New South Wales", "rainfall": 862 },
+  { "state": "Victoria", "rainfall": 620 },
+  { "state": "Queensland", "rainfall": 1040 },
+  { "state": "Western Australia", "rainfall": 300 },
+  { "state": "South Australia", "rainfall": 275 },
+  { "state": "Tasmania", "rainfall": 1400 },
+  { "state": "Northern Territory", "rainfall": 500 },
+  { "state": "Australian Capital Territory", "rainfall": 750 }
+]

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "width": 700,
+  "height": 450,
+
+  "title": "Average Rainfall by State (Australia)",
+
+  "projection": {"type": "mercator"},
+
+  "layer": [
+
+    {
+      "data": {
+        "url": "data/australianstates.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_10m_admin_1_states_provinces"
+        }
+      },
+
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {
+              "url": "data/rainfall.json"
+            },
+            "key": "state",
+            "fields": ["rainfall"]
+          }
+        }
+      ],
+
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white"
+      },
+
+      "encoding": {
+        "color": {
+          "field": "rainfall",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          },
+          "title": "Rainfall (mm)"
+        },
+
+        "tooltip": [
+          {
+            "field": "properties.name",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "rainfall",
+            "type": "quantitative",
+            "title": "Rainfall"
+          }
+        ]
+      }
+    }
+
+  ]
+}

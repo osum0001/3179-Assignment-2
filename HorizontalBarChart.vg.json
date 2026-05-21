@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Average Windspeed per State",
+    "width": 400,
+    "height": 300,
+
+    "data": {
+        "url": "data/sample2.json" 
+        
+    },
+
+    "mark": "bar",
+
+    "encoding": {
+
+        
+        "y": {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+        },
+
+        
+        "x": {
+            "field": "wind_speed",
+            "type": "quantitative",
+            "title": "Wind Speed (km/h)"
+        },
+
+        "tooltip": [
+            { "field": "state", "type": "nominal" },
+            { "field": "wind_speed", "type": "quantitative" }
+        ]
+    }
+
+}
